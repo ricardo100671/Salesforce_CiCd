@@ -1,9 +1,12 @@
 name: Validate Pull Request
+on: 
+  pull_request:
 jobs:
-  validate:
+  Validate:
     runs-on: ubuntu-latest
     steps:
-        uses: ricardo100671/salesforce_cicd/validate@main
+      - uses: ricardo100671/salesforce_cicd/validate@main
         with:
           sfUser: 
+          sfConsumerKey: 
           path: force-app/**
