@@ -1,0 +1,9 @@
+name: Validate Pull Request
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+        uses: ricardo100671/salesforce_cicd/validate@main
+        with:
+          sfUser: 
+          path: force-app/**
