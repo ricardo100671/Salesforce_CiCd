@@ -7,5 +7,6 @@ jobs:
     steps:
       - uses: ricardo100671/salesforce_cicd/validate@main
         with:
+          sfUser: 
           sfConsumerKey: 
           path: force-app/**
